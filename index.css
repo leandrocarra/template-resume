@@ -1,0 +1,166 @@
+/** Reset **/
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, a,
+address, big, img, small, strong,
+u, i, ul, li, form, label {
+	margin: 0;
+	padding: 0;
+    border: 0;
+	outline: 0;
+    box-sizing: border-box;
+}
+body {
+    line-height: 1;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+:focus {
+	outline: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/** sctructures **/
+.wrapper{
+    background-color: #45484D; 
+    overflow: hidden;
+}
+.wrapper__head-title{
+    height: 200px;
+    color: #FFF;   
+}
+.wrapper__header{
+    padding-top: 80px;
+}
+.wrapper__content{
+    background-color: #FFF;
+    min-height: 820px;
+}
+.wrapper__content .box__content:last-child,
+.wrapper__left-column .box__informations:last-child{
+    border-bottom: 0px;
+}
+.wrapper__container{
+    width: 720px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.wrapper__right-column{
+    float: right;
+    padding-left: 30px;
+    text-align: center;
+    width: 500px;
+}
+.wrapper__left-column{
+    float: left;
+    text-align: center;
+    margin-top: -170px;
+    width: 170px;
+    min-height: 870px;
+    padding: 10px;
+    background-color: #F0EBE8;
+}
+.wrapper__footer{
+    background-color: #45484D;
+    height: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+/** Titles **/
+.title__header{
+    font-size: 30px;
+    font-weight: 400;
+}
+.title__featured{
+    font-weight: 700;
+}
+.title__job-vacancy, .title__description{
+    font-size: 18px;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 10px;
+}
+.title__description--center{
+    text-align: center;
+}
+.title__job-vacancy{
+    font-weight: 400;
+}
+.title__description-title{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.title__description-others{
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+.title__description-others--together{
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+
+
+/** Code **/
+.separator{
+    border-bottom: 1px solid #FFF;
+    width: 50px;
+    display: block;
+    margin: 10px auto;
+}
+.text__content{
+    text-align: justify;
+    line-height: 1.3;
+}
+
+
+/** Box model **/
+.box__content{
+    padding: 15px 0;
+    border-bottom: 1px solid #45484D;
+}
+
+.box__content--left-text{
+    text-align: left;
+}
+.box__content-list-responsibilities{
+    margin-top: 5px;
+    list-style: disc;
+    margin-left: 40px;
+    text-align: left;
+    line-height: 1.3;
+}
+.box_image img{
+    border-radius: 100%;
+    width: 85%;
+    margin-bottom: 15px;
+}
+.box__informations{
+    border-bottom: 1px solid #45484D;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+/** Medias **/
+/** To print **/
+@media print{
+    body{
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+}
+/** to view print page **/
+@page{
+    size: 210mm 270mm;
+    padding: 0;
+    margin:0mm;
+    border: none;
+    border-collapse: collapse;
+ }
